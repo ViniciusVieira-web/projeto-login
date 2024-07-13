@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
 
@@ -14,13 +15,28 @@
 
             <div id="imagem">
 
+                
+
             </div>
 
             <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
 
-                <form action="login.php" method="post"></form>
+                <h1>Login</h1>
+
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+                <form action="login.php" method="post" autocomplete="on">
+
+                    <p class="caixa">
+                        <label for="iemail">seu e-mail: </label>
+                        <input type="text" name="email" id="iemail" required autocomplete="on" placeholder="seu-email">
+                    </p>
+
+                    <p class="caixa">
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" required min="8" max="20" placeholder="sua senha">
+                    </p>
+                </form>
 
             </div>
 
